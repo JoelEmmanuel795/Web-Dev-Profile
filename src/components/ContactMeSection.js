@@ -26,19 +26,21 @@ const ContactMeSection = () => {
       firstName: "",
       email: "",
       type: "hireMe",
-      comment: ""
+      comment: "",
     },
     onSubmit: (values) => {
-      submit("", values);
+      submit(null, values); // Pass all values, including type
     },
-    validationSchema:  Yup.object().shape({
+    validationSchema: Yup.object().shape({
       firstName: Yup.string().required("Required"),
       email: Yup.string().email("Invalid email address").required("Required"),
-      type: Yup.string().oneOf(["hireMe", "openSource", "other"], "Invalid type selected")
+      type: Yup.string()
+        .oneOf(["hireMe", "openSource", "other"], "Invalid type selected")
         .required("Type of enquiry is required"),
-      comment: Yup.string().min(25, "Must be at least 25 characters").required("Required")
-    })
+      comment: Yup.string().min(25, "Must be at least 25 characters").required("Required"),
+    }),
   });
+  
 
    useEffect(() => {
     if (response) {
@@ -84,7 +86,21 @@ const ContactMeSection = () => {
               </FormControl>
               <FormControl>
                 <FormLabel htmlFor="type">Type of enquiry</FormLabel>
-                <Select id="type" name="type" {...formik.getFieldProps("type")}>
+                <Select 
+                  id="type" 
+                  name="type" 
+                  bg="white"
+                  color="black"
+                  _focus={{
+                    bg: "white",
+                    color: "black",
+                  }}
+                  _hover={{
+                    bg: "white",
+                    color: "black",
+                  }}
+                  {...formik.getFieldProps("type")}
+                >
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">
                     Open source consultancy session
