@@ -24,7 +24,7 @@ const useSubmit = () => {
       if (result.status === 200) {
         setResponse({
           type: "success",
-          message: `Thanks for your submission, ${data.firstName}! I will get back to you shortly.`,
+          message: `Thanks for your submission, ${data.firstName}! I have received your email and will get back to you shortly.`,
         });
       } else {
         throw new Error("EmailJS API call failed");

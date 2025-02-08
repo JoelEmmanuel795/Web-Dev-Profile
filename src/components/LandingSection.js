@@ -14,15 +14,15 @@ const LandingSection = () => (
     isDarkBackground
     backgroundColor="#2A4365"
   >
-     <Avatar src={profile_image} size='2xl'/>
+    <Avatar src={profile_image} size={{ base: 'xl', sm: '2xl' }} />
     <VStack spacing={2} mt={6}>
-      <Heading as="h3" size="md" noOfLines={1}>
+      <Heading as="h3" size={{ base: 'sm', sm: 'md' }} noOfLines={1}>
         {greeting}
       </Heading>
-      <Heading as="h1" size="2xl">
+      <Heading as="h1" size={{ base: 'lg', sm: '2xl' }}>
         {bio1}
       </Heading>
-      <Heading as="h1" size="2xl">
+      <Heading as="h1" size={{ base: 'lg', sm: '2xl' }}>
         {bio2}
       </Heading>
     </VStack>

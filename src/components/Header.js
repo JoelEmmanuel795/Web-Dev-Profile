@@ -7,7 +7,7 @@ import {
   faMedium,
   faStackOverflow,
 } from "@fortawesome/free-brands-svg-icons";
-import { Box, HStack } from "@chakra-ui/react";
+import { Box, HStack, VStack } from "@chakra-ui/react";
 
 const socials = [
   {
@@ -53,14 +53,12 @@ const Header = () => {
       const currScrollPos = window.scrollY;
       const currHeaderElement = headerRef.current;
 
-      if (!currHeaderElement)
-        return;
-    
+      if (!currHeaderElement) return;
+
       if (prevScrollPos > currScrollPos)
         currHeaderElement.style.transform = "translateY(0)";
-      else
-        currHeaderElement.style.transform = "translateY(-200px)";
-      
+      else currHeaderElement.style.transform = "translateY(-200px)";
+
       prevScrollPos = currScrollPos;
     };
 
@@ -83,32 +81,69 @@ const Header = () => {
       transitionTimingFunction="ease-in-out"
       backgroundColor="#18181b"
       ref={headerRef}
+      zIndex={10} // Ensure header stays above other elements
     >
-      <Box color="white" maxWidth="1280px" margin="0 auto">
+      <Box color="white" maxWidth="1280px" margin="0 auto" px={{ base: 4, sm: 8 }}>
         <HStack
-          px={16}
           py={4}
           justifyContent="space-between"
           alignItems="center"
+          flexWrap={{ base: "wrap", sm: "nowrap" }} // Wrap only on mobile
         >
-         <nav>
-            <HStack spacing={10}>
-              {socials.map(({icon, url}) => (
-                <a key={url} href={url} icon={icon} target="_blank" rel="noopener noreferrer">
-                  <FontAwesomeIcon key={url} icon={icon} size="2x"/>
-                </a>
-              ))}
-            </HStack>
-          </nav>
-          <nav>
-            <HStack spacing={8}>
-              <a key="projects-section" href="#projects" onClick={handleClick("projects")}>Projects</a>
-              <a key="contectme-section" href="#contact-me" onClick={handleClick("contactme")}>Contact Me</a>
-            </HStack>
-          </nav>
+          {/* Social Icons */}
+          <HStack spacing={{ base: 4, sm: 8 }}>
+            {socials.map(({ icon, url }) => (
+              <a
+                key={url}
+                href={url}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={icon}
+                  style={{
+                    fontSize: "2rem", // Large icons by default
+                    width: "30px",
+                  }}
+                />
+              </a>
+            ))}
+          </HStack>
+
+          {/* Navigation Links */}
+          <HStack
+            spacing={{ base: 4, sm: 8 }} // Adjust spacing for mobile and larger screens
+            flexWrap={{ base: "wrap", sm: "nowrap" }} // Wrap on mobile
+            justifyContent={{ base: "center", sm: "flex-end" }} // Center on mobile
+            mt={{ base: 4, sm: 0 }} // Add margin on mobile
+          >
+            <a
+              key="projects-section"
+              href="#projects"
+              onClick={handleClick("projects")}
+              style={{
+                fontSize: "1rem", // Default font size
+                margin: "0 8px",
+              }}
+            >
+              Projects
+            </a>
+            <a
+              key="contactme-section"
+              href="#contact-me"
+              onClick={handleClick("contactme")}
+              style={{
+                fontSize: "1rem", // Default font size
+                margin: "0 8px",
+              }}
+            >
+              Contact Me
+            </a>
+          </HStack>
         </HStack>
       </Box>
     </Box>
   );
 };
+
 export default Header;

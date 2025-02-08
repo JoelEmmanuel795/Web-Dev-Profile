@@ -5,16 +5,15 @@ const Footer = () => {
   return (
     <Box backgroundColor="#18181b">
       <footer>
-        <Flex
-          margin="0 auto"
-          px={12}
-          color="white"
-          justifyContent="center"
-          alignItems="center"
-          maxWidth="1024px"
-          height={16}
-        >
-          <p>Pete • © 2022</p>
+      <Flex
+        px={4} // Padding for mobile
+        color="white"
+        justifyContent="center"
+        alignItems="center"
+        maxW="90%"
+        height={{ base: 12, sm: 16 }} // Adjust height for mobile and tablets
+      >
+          <p>Joel • © 2025</p>
         </Flex>
       </footer>
     </Box>
