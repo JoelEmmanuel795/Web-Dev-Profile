@@ -7,7 +7,7 @@ const projects = [
   {
     title: "Capstone Project for the Meta Front End Developer Course",
     description:
-      "For my Meta Front-End Developer Certification capstone, I built a homepage and booking page for the fictional “Little Lemon Restaurant” 🍋 using HTML, CSS, JavaScript, JSX, and React ⚛️. This project showcased responsive design (📱), form validation (✅), wireframes in Figma (🖌️), and adherence to a style guide (🎨)—putting into practice everything I learned in the program.",
+      "For my Meta Front-End Developer Certification capstone, I built a homepage and booking page for the fictional “Little Lemon Restaurant” 🍋 using HTML, CSS, JavaScript, JSX, and React ⚛️. This project showcased responsive design (📱), form validation (📝✅), wireframes in Figma (🖌️), and adherence to a style guide (🎨)—putting into practice everything I learned in the program.",
     getImageSrc: () => require("../images/Meta_Capstone_Screenshot.png"),
     link: "https://joelemmanuel795.github.io/Meta_Capstone_Project",
   },
