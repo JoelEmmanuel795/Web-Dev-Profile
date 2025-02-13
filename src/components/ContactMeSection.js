@@ -116,7 +116,7 @@ const ContactMeSection = () => {
                   <option value="" style={{ fontStyle: "italic", color: "gray" }}>-- Select an inquiry --</option>
                   <option value="hireMe">Freelance project proposal</option>
                   <option value="openSource">Open source consultancy session</option>
-                  <option value="jobInterview">Job Interview</option>
+                  <option value="jobInterview">Job Offer</option>
                   <option value="other">Other</option>
                 </Select>
                 <FormErrorMessage>{formik.errors.type}</FormErrorMessage>
