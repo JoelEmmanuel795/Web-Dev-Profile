@@ -4,8 +4,8 @@ import FullScreenSection from "./FullScreenSection";
 import profile_image from "../images/profile_image.jpg"
 
 const greeting = "Hello, I am Joel!";
-const bio1 = "A frontend developer";
-const bio2 = "specialising in React";
+const bio1 = "A fullstack developer specialising in";
+const bio2 = "Python, C, JavaScript, HTML, CSS, and React";
 
 const LandingSection = () => (
   <FullScreenSection
@@ -19,10 +19,10 @@ const LandingSection = () => (
       <Heading as="h3" size={{ base: 'sm', sm: 'md' }} noOfLines={1}>
         {greeting}
       </Heading>
-      <Heading as="h1" size={{ base: 'lg', sm: '2xl' }}>
+      <Heading as="h1" size={{ base: 'lg', sm: 'xl' }}>
         {bio1}
       </Heading>
-      <Heading as="h1" size={{ base: 'lg', sm: '2xl' }}>
+      <Heading as="h1" size={{ base: 'lg', sm: 'xl' }}>
         {bio2}
       </Heading>
     </VStack>
