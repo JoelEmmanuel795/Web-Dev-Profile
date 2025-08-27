@@ -6,6 +6,10 @@ This is a personal portfolio website built with React and Chakra UI, showcasing 
 
 View the portfolio at: [https://joelemmanuel795.github.io/Web-Dev-Profile/](https://joelemmanuel795.github.io/Web-Dev-Profile/)
 
+<p align="center">
+  <img src="assets/1.png" height="400">
+</p>
+
 ## Features
 
 - Responsive single-page design
