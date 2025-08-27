@@ -2,6 +2,10 @@
 
 This is a personal portfolio website built with React and Chakra UI, showcasing my featured projects, skills, and a contact form for inquiries.
 
+## Live Portfolio
+
+View the portfolio at: [https://joelemmanuel795.github.io/Web-Dev-Profile/](https://joelemmanuel795.github.io/Web-Dev-Profile/)
+
 ## Features
 
 - Responsive single-page design
@@ -9,10 +13,6 @@ This is a personal portfolio website built with React and Chakra UI, showcasing 
 - Landing section with avatar and bio
 - Projects section displaying featured work
 - Contact form powered by Formik, Yup, and EmailJS
-
-## Live Demo
-
-View the portfolio at: [https://joelemmanuel795.github.io/Web-Dev-Profile/](https://joelemmanuel795.github.io/Web-Dev-Profile/)
 
 ## Technologies Used
 
