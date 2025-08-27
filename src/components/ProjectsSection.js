@@ -5,12 +5,37 @@ import Card from "./Card";
 
 const projects = [
   {
+    title:
+      "MacroMates: Innovative health and nutrition platform powered with AI",
+    description:
+      "An advanced health platform that revolutionizes nutrition tracking using AI technology. Built with React, Django REST Framework, and OpenAI integration, MacroMates offers instant meal analysis through photo recognition (📸), personalized health insights (📊), and natural language goal setting (🎯). The platform features real-time macro tracking, interactive dashboards, and a sophisticated containerized architecture using Docker and GitLab CI/CD (🐳⚙️).",
+    getImageSrc: () => require("../images/macromates.png"),
+    githubLink: "https://github.com/JoelEmmanuel795/macromates",
+    liveLink: "https://macromates.ch/",
+  },
+  {
+    title: "Ripple: Modern Social Media Platform with Real-Time Interactions",
+    description:
+      "A feature-rich social media platform developed during an intensive one-week sprint at Constructor Academy. Built with React and Redux Toolkit, Ripple showcases advanced features like infinite scrolling (∞), real-time notifications (🔔), and multi-image post support (🖼️). The platform demonstrates modern web development practices with comprehensive state management and responsive design implementation.",
+    getImageSrc: () => require("../images/ripple.png"),
+    githubLink: "https://github.com/JoelEmmanuel795/Ripple-Social-Media",
+    liveLink: "https://joelemmanuel795.github.io/Ripple-Social-Media/",
+  },
+  {
     title: "Capstone Project for the Meta Front End Developer Specialization",
     description:
       'For my Meta Front-End Developer Certification capstone, I built a homepage and booking page for the fictional "Little Lemon Restaurant" using HTML, CSS, JavaScript, JSX, and React. This project showcases responsive design (📱), form validation (📝), management of state and passing of props across React components (⚛️), efficient re-renders using the Virtual DOM (🔮), and adherence to a style guide (🎨)—putting into practice everything I learned in the program.',
     getImageSrc: () => require("../images/Meta_Capstone_Screenshot.png"),
     githubLink: "https://github.com/JoelEmmanuel795/Meta_Capstone_Project",
     liveLink: "https://joelemmanuel795.github.io/Meta_Capstone_Project",
+  },
+  {
+    title: "Little Lemon Mobile Prototype",
+    description:
+      'As part of the "Principles of UX/UI Design" course in the Meta Front-End Developer Certificate, I designed this interactive mobile prototype to structure the homepage of the Little Lemon Restaurant website. This project showcases responsive UI, component-based design (⚛️), and interactive elements (📱) to enhance user experience and accessibility.',
+    getImageSrc: () => require("../images/LittleLemon_Mobile_Prototype.png"),
+    liveLink:
+      "https://www.figma.com/proto/sO3tZ9oS8VLDlyj6oJX6H8/Revised-Design-(UI-Assignment)?t=SK84scRW51LLpSFB-1",
   },
   {
     title: "Little Lemon Wireframe",
@@ -28,14 +53,6 @@ const projects = [
     githubLink: "https://github.com/JoelEmmanuel795/-little-lemon-html-css",
     liveLink:
       "https://joelemmanuel795.github.io/-little-lemon-html-css/index.html",
-  },
-  {
-    title: "Little Lemon Mobile Prototype",
-    description:
-      'As part of the "Principles of UX/UI Design" course in the Meta Front-End Developer Certificate, I designed this interactive mobile prototype to structure the homepage of the Little Lemon Restaurant website. This project showcases responsive UI, component-based design (⚛️), and interactive elements (📱) to enhance user experience and accessibility.',
-    getImageSrc: () => require("../images/LittleLemon_Mobile_Prototype.png"),
-    liveLink:
-      "https://www.figma.com/proto/sO3tZ9oS8VLDlyj6oJX6H8/Revised-Design-(UI-Assignment)?t=SK84scRW51LLpSFB-1",
   },
   {
     title: "HTML/CSS Portfolio",
