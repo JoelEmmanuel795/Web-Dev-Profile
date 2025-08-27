@@ -1,22 +1,24 @@
 {
   "files": {
     "main.css": "/Web-Dev-Profile/static/css/main.eb2d92f2.css",
-    "main.js": "/Web-Dev-Profile/static/js/main.4da5f19f.js",
+    "main.js": "/Web-Dev-Profile/static/js/main.538ffc60.js",
     "static/js/453.8927b4e4.chunk.js": "/Web-Dev-Profile/static/js/453.8927b4e4.chunk.js",
     "static/media/HTML_CSS_LittleLemon.png": "/Web-Dev-Profile/static/media/HTML_CSS_LittleLemon.c882b1f2fb7601b08859.png",
     "static/media/SuperDogs_Registration_Form.png": "/Web-Dev-Profile/static/media/SuperDogs_Registration_Form.480f01f44675848404c0.png",
+    "static/media/ripple.png": "/Web-Dev-Profile/static/media/ripple.6a17e6d0d9acc538b9b0.png",
     "static/media/Meta_Capstone_Screenshot.png": "/Web-Dev-Profile/static/media/Meta_Capstone_Screenshot.0c195796625b2d64b9ec.png",
+    "static/media/macromates.png": "/Web-Dev-Profile/static/media/macromates.dec728b936e89ddb54d9.png",
     "static/media/HTML_CSS_Portfolio.png": "/Web-Dev-Profile/static/media/HTML_CSS_Portfolio.9db7e89908fa7be2b54a.png",
     "static/media/LittleLemon_Mobile_Prototype.png": "/Web-Dev-Profile/static/media/LittleLemon_Mobile_Prototype.075a30fa147f067f6457.png",
     "static/media/profile_image.jpg": "/Web-Dev-Profile/static/media/profile_image.25a62e59f5958161cd70.jpg",
     "static/media/Meta_Capstone_Wireframe.png": "/Web-Dev-Profile/static/media/Meta_Capstone_Wireframe.839d7a085177a67eda47.png",
     "index.html": "/Web-Dev-Profile/index.html",
     "main.eb2d92f2.css.map": "/Web-Dev-Profile/static/css/main.eb2d92f2.css.map",
-    "main.4da5f19f.js.map": "/Web-Dev-Profile/static/js/main.4da5f19f.js.map",
+    "main.538ffc60.js.map": "/Web-Dev-Profile/static/js/main.538ffc60.js.map",
     "453.8927b4e4.chunk.js.map": "/Web-Dev-Profile/static/js/453.8927b4e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb2d92f2.css",
-    "static/js/main.4da5f19f.js"
+    "static/js/main.538ffc60.js"
   ]
 }
