@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Web-Dev-Profile/static/css/main.eb2d92f2.css",
-    "main.js": "/Web-Dev-Profile/static/js/main.63d5026b.js",
+    "main.js": "/Web-Dev-Profile/static/js/main.4da5f19f.js",
     "static/js/453.8927b4e4.chunk.js": "/Web-Dev-Profile/static/js/453.8927b4e4.chunk.js",
     "static/media/HTML_CSS_LittleLemon.png": "/Web-Dev-Profile/static/media/HTML_CSS_LittleLemon.c882b1f2fb7601b08859.png",
     "static/media/SuperDogs_Registration_Form.png": "/Web-Dev-Profile/static/media/SuperDogs_Registration_Form.480f01f44675848404c0.png",
@@ -12,11 +12,11 @@
     "static/media/Meta_Capstone_Wireframe.png": "/Web-Dev-Profile/static/media/Meta_Capstone_Wireframe.839d7a085177a67eda47.png",
     "index.html": "/Web-Dev-Profile/index.html",
     "main.eb2d92f2.css.map": "/Web-Dev-Profile/static/css/main.eb2d92f2.css.map",
-    "main.63d5026b.js.map": "/Web-Dev-Profile/static/js/main.63d5026b.js.map",
+    "main.4da5f19f.js.map": "/Web-Dev-Profile/static/js/main.4da5f19f.js.map",
     "453.8927b4e4.chunk.js.map": "/Web-Dev-Profile/static/js/453.8927b4e4.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.eb2d92f2.css",
-    "static/js/main.63d5026b.js"
+    "static/js/main.4da5f19f.js"
   ]
 }
