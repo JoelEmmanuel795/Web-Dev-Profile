@@ -1,11 +1,19 @@
-import { Heading, HStack, Image, Text, VStack, AspectRatio, Box } from "@chakra-ui/react";
+import {
+  Heading,
+  HStack,
+  Image,
+  Text,
+  VStack,
+  AspectRatio,
+  Box,
+  Button,
+} from "@chakra-ui/react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import React from "react";
 
-
-
-const Card = ({ title, description, imageSrc, link }) => {
+const Card = ({ title, description, imageSrc, liveLink, githubLink }) => {
   return (
     <VStack
       w="100%"
@@ -19,19 +27,16 @@ const Card = ({ title, description, imageSrc, link }) => {
       align="stretch"
       spacing={4}
       transition="transform 0.3s ease-in-out"
-      cursor="pointer"
       _hover={{
-        transform: "scale(1.05)",
         boxShadow: "xl",
       }}
-      onClick={() => window.open(link, "_blank")} 
     >
       {/* 
         Use AspectRatio so that all images share the same ratio, 
         ensuring a uniform look among the cards 
       */}
       <AspectRatio ratio={14 / 9} w="100%" bg="black">
-        <Image src={imageSrc} objectFit="contain"/>
+        <Image src={imageSrc} objectFit="contain" />
       </AspectRatio>
 
       {/* Title + Description */}
@@ -42,10 +47,28 @@ const Card = ({ title, description, imageSrc, link }) => {
         <Text fontSize="sm">{description}</Text>
       </VStack>
 
-      {/* "See More" + Arrow at the bottom */}
-      <HStack px={4} pb={4} justify="space-between" w="100%" mt="auto">
-        <Text fontSize={{ base: 'xs', sm: 'sm' }}>See More</Text>
-        <FontAwesomeIcon icon={faArrowRight} size="1x" />
+      {/* Action buttons at the bottom */}
+      <HStack px={4} pb={4} justify="flex-end" w="100%" mt="auto" spacing={4}>
+        {githubLink && (
+          <Button
+            leftIcon={<FontAwesomeIcon icon={faGithub} />}
+            size="sm"
+            variant="outline"
+            onClick={() => window.open(githubLink, "_blank")}
+          >
+            View on GitHub
+          </Button>
+        )}
+        {liveLink && (
+          <Button
+            rightIcon={<FontAwesomeIcon icon={faExternalLinkAlt} />}
+            size="sm"
+            colorScheme="green"
+            onClick={() => window.open(liveLink, "_blank")}
+          >
+            View Live
+          </Button>
+        )}
       </HStack>
     </VStack>
   );
