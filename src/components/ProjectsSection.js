@@ -11,6 +11,7 @@ const projects = [
       "An advanced health platform that revolutionizes nutrition tracking using AI technology. Built with React, Django REST Framework, and OpenAI integration, MacroMates offers instant meal analysis through photo recognition (📸), personalized health insights (📊), and natural language goal setting (🎯). The platform features real-time macro tracking, interactive dashboards, and a sophisticated containerized architecture using Docker and GitLab CI/CD (🐳⚙️).",
     getImageSrc: () => require("../images/macromates.png"),
     githubLink: "https://github.com/JoelEmmanuel795/macromates",
+    liveLink: "https://www.youtube.com/watch?v=_grQ8WPekds",
   },
   {
     title: "Ripple: Modern Social Media Platform with Real-Time Interactions",
